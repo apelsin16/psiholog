@@ -1,0 +1,100 @@
+.section__wrapper {
+    width: 1170px;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin: 0 auto;
+}
+
+.section__title {
+    font-size: 30px;
+    font-family: "MuseoSansCyrl-700";
+    color: $base-color;
+    text-align: center;
+    padding-bottom: 90px;
+}
+
+.article {
+    display: flex;
+    position: relative;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    
+    &--second {
+        flex-direction: row-reverse;
+    }
+}
+
+.article__imgblock {
+    @include col();
+    @include size(6);
+    position: relative;
+
+    &--second {
+        text-align: right;
+    }
+}
+
+.article__infoblock {
+    @include col();
+    @include size(6);
+    position: relative;
+    margin: auto 0;
+    z-index: 3;
+}
+
+.points {
+    position: absolute;
+    z-index: 2;
+    bottom: 27px;
+    background-image: url(../img/points.png);
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+    
+    &--left {
+        right: 0;
+    }
+
+    &--right {
+        left: 0;
+    }
+}
+
+.article__title {
+    font-size: 26px;
+    font-family: "MuseoSansCyrl-900";
+    color: #262626;
+    margin-bottom: 42px;
+}
+
+.article__text {
+    font-size: 18px;
+    font-family: "MuseoSansCyrl-500";
+    color: #262626;
+    margin: 0;
+}
+
+.article__subtitle {
+    font-size: 18px;
+    font-family: "MuseoSansCyrl-900";
+    color: #262626;
+    margin-bottom: 40px;
+}
+
+.watermark {
+    position: absolute;
+    z-index: 2;
+    bottom: -30px;    
+    color: #f6fafc;
+    font-size: 200px;
+    font-family: "MuseoSansCyrl-900";
+
+    &--first {
+        left: 35%;
+    }
+
+    &--second {
+        right: 35%;
+    }
+}
+

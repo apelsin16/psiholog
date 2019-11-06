@@ -1,0 +1,40 @@
+.suitable {
+    padding-top: 150px;
+    background-image: url(../img/bg3.png);
+
+    .article {
+        background-image: url(../img/element1.png);
+        background-position: 54% 25%;
+        background-repeat: no-repeat;
+        padding-bottom: 120px;
+
+        &--first {
+            background-position: 46% 75%;
+            background-image: url(../img/element2.png);
+        }
+    }
+}
+
+.article__list {
+    margin-bottom: 40px;
+}
+
+.article__item {
+    margin-left: 20px;
+    font-size: 18px;
+    font-family: "MuseoSansCyrl-500";
+    color: #262626;
+    line-height: 1.5;
+}
+
+.article__button {
+    font-size: 18px;
+    font-family: "MuseoSansCyrl-700";
+    width: 270px;
+    height: 60px;
+    border: none;
+    border-radius: 27px;
+    color: #fff;
+    background: linear-gradient(90deg, rgba( 91, 30, 157, 1) 10%, rgba( 100, 75, 195, 1) 100%);
+}
+
