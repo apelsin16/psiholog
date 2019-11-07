@@ -1,5 +1,5 @@
 .suitable {
-    // padding-top: 150px;
+    position: relative;
     background: url(../img/design.png) #f6f6f6;
     background-repeat: no-repeat;
     background-position: center 300px;
@@ -70,5 +70,10 @@
     border-radius: 27px;
     color: #fff;
     background: linear-gradient(90deg, rgba( 91, 30, 157, 1) 10%, rgba( 100, 75, 195, 1) 100%);
-}
+    box-shadow: 0px 8px 18px 0px rgba(150, 150, 150, 0.98);
+  
+    &:hover {
+        background: linear-gradient(90deg, rgba(100, 75, 195, 1) 10%, rgba(  91, 30, 157, 1) 100%);
+    }
 
+}

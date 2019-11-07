@@ -26,6 +26,10 @@
     &--second {
         flex-direction: row-reverse;
     }
+
+    &__img {
+        width: 100%;
+    }
 }
 
 .article__imgblock {
@@ -100,11 +104,60 @@
     font-family: "MuseoSansCyrl-900";
 
     &--first {
-        left: 35%;
+        left: 30%;
     }
 
     &--second {
         right: 35%;
     }
+
+    &--last {
+        left: 16%;
+    }    
 }
+
+@media (max-width: 1200px) {
+    .section__wrapper {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .watermark--last {
+        font-size: 150px;
+    }
+}
+
+@media (max-width: 1010px) {
+    .article__imgblock {
+        position: static;
+    }
+
+    .article__infoblock {
+        position: static;
+    }
+
+    .watermark {
+        display: none;
+    } 
+
+    .points {
+        display: none;
+    }
+}
+
+@media (max-width: 800px) {
+    .article {
+        flex-direction: column;
+    }
+
+    .article__imgblock {
+        width: 100%;
+    }
+
+    .article__infoblock {
+        width: 100%;
+    }
+}
+
+
 
