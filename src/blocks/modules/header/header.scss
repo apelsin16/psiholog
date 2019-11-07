@@ -2,7 +2,7 @@
 
 .header {
     padding-top: 11px;
-    padding-bottom: 34px;
+    padding-bottom: 50px;
     width: 100%;
     min-height: 100vh;
     background-image: url('../img/bg-main.webp');
@@ -90,7 +90,7 @@
 
 .header__subtitle {
     margin-top: 10px;
-    font-family: 'MyriadPro-Regular';
+    font-family: 'MuseoSansCyrl-500';
     font-size: 24px;
     color: $base-color;
 }
@@ -123,8 +123,8 @@
 
 .short-info {
     display: flex;
-    @include col();
-    @include size(8);
+    // @include col();
+    // @include size(8);
     padding-top: 45px; 
     padding-bottom: 60px; 
 }
@@ -134,15 +134,21 @@
     font-family: "MuseoSansCyrl-900";
     color: $second-color;
     line-height: 1.556; 
-    min-width: 250px;
+    max-width: 250px;
+    margin-right: 33px;
+
+    &--middle {
+        max-width: 200px;
+        margin-right: 45px;
+    }
 
     &::before {
         content: ' ';
         display: block;
         background-position: center;
         background-size: cover;
-        width: 70px;
-        height: 70px;
+        width: 55px;
+        height: 55px;
         margin-bottom: 15px;
     }
     
@@ -165,7 +171,7 @@
 }
 
 .wrapper {
-    width: 1245px;
+    width: 1200px;
     padding: 30px;
     margin: 0 auto;
     border-radius: 5px;
@@ -175,18 +181,26 @@
 }
 
 .header__text {
-    font-size: 18px;
+    font-size: 24px;
     font-family: "MuseoSansCyrl-500";
     color: #fff;
-    width: 630px;
+    width: 700px;
     text-align: center;
     margin: 0 auto;
     padding-bottom: 25px;
+
+    span {
+        font-family: "MuseoSansCyrl-900";
+    }
+}
+
+.form {
+    display: flex;
+    justify-content: space-around;
 }
 
 .form input {
-    @include col();
-    @include size(3);
+   
     border-radius: 27px;
     background-color: rgb(255, 255, 255);
     width: 270px;
@@ -211,8 +225,8 @@
 .girl {
     position: absolute;
     background-image: url(../img/girl.png);
-    left: 60%;
-    top: 76px;
+    left: 63%;
+    top: 62px;
     width: 300px;
     height: 500px;
     z-index: 0;
