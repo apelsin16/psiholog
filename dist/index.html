@@ -8,11 +8,11 @@
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <link rel="shortcut icon" href="../img/favicons/favicon.ico" type="image/x-icon">
-        <link rel="icon" sizes="16x16" href="../img/fav-16.ico" type="image/png">
-        <link rel="icon" sizes="48x48" href="../img/fav-48.ico" type="image/png">
-        <link rel="icon" sizes="57x57" href="../img/fav-57.ico" type="image/png">
-        <link rel="icon" sizes="72x72" href="../img/fav-72.ico" type="image/png">
-        <link rel="icon" sizes="114x114" href="../img/fav-114.ico" type="image/png">
+        <link rel="icon" sizes="16x16" href="../img/fav-16.ico" type="image/x-icon">
+        <link rel="icon" sizes="48x48" href="../img/fav-48.ico" type="image/x-icon">
+        <link rel="icon" sizes="57x57" href="../img/fav-57.ico" type="image/x-icon">
+        <link rel="icon" sizes="72x72" href="../img/fav-72.ico" type="image/x-icon">
+        <link rel="icon" sizes="114x114" href="../img/fav-114.ico" type="image/x-icon">
         <link rel="apple-touch-icon-precomposed" href="../img/favicons/apple-touch-icon-precomposed.png">
         <link rel="apple-touch-icon" href="../img/favicons/apple-touch-icon.png">
         <link rel="apple-touch-icon" sizes="57x57" href="../img/favicons/apple-touch-icon-57x57.png">
@@ -70,11 +70,11 @@
         который определит тип Вашей личности и характера</p>
         
         
-        <form action="" class="row form">
-            <input type="text" placeholder="Ваше имя">
-            <input type="email" placeholder="Ваш e-mail">
-            <input type="tel" placeholder="Ваше телефон">
-            <input type="submit" value="Получить тест">
+        <form action="https://formspree.io/xzbbzado" class="row form" method="POST">
+            <input type="text" placeholder="Ваше имя" name="user">
+            <input type="email" placeholder="Ваш e-mail" name="email">
+            <input type="tel" placeholder="Ваше телефон" name="tel">
+            <input type="submit" value="Получить тест" name="name='button'">
         </form>
     </div>
     <!-- Форма перезвоните - начало -->
@@ -84,12 +84,12 @@
         <p class="recall__text">и наш менеджер перезвонит Вам
                 в течение 15 мин, чтобы ответить
                 на все вопросы</p>
-        <form action="" class="form">
-                <input type="text" placeholder="Ваше имя">
-                <input type="email" placeholder="Ваш e-mail">
-                <input type="tel" placeholder="Ваше телефон">
+        <form action="./send.php" class="form" method="POST">
+                <input type="text" placeholder="Ваше имя" name="user">
+                <input type="email" placeholder="Ваш e-mail" name="email">
+                <input type="tel" placeholder="Ваше телефон" name="tel">
                 <input type="submit" value="Перезвоните мне">
-                <input type="hidden" name='Перезвоните мне'>
+                <input type="hidden" name='button' value='Перезвоните мне'>
         </form>
     </div>
     <!-- Форма перезвоните - конец -->
@@ -323,12 +323,12 @@
             <h4 class='more-details__title'>Заполните форму</h4>
             <p class="more-details__text">чтобы узнать подробнее и наш специалист перезвонит Вам
                     в течение 15 мин</p>
-            <form action="" class="form">
-                    <input type="text" placeholder="Ваше имя">
-                    <input type="email" placeholder="Ваш e-mail">
-                    <input type="tel" placeholder="Ваше телефон">
+            <form action="./send.php" class="form" method="POST">
+                    <input type="text" placeholder="Ваше имя" name="user">
+                    <input type="email" placeholder="Ваш e-mail" name="email">
+                    <input type="tel" placeholder="Ваше телефон" name='tel'>
                     <input type="submit" value="Узнать подробнее">
-                    <input type="hidden" id="inputHidden">
+                    <input type="hidden" id="inputHidden" name='button' >
             </form>
         </div>
         <!-- Форма перезвоните - конец -->

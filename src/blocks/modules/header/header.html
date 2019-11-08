@@ -39,11 +39,11 @@
         который определит тип Вашей личности и характера</p>
         
         
-        <form action="" class="row form">
-            <input type="text" placeholder="Ваше имя">
-            <input type="email" placeholder="Ваш e-mail">
-            <input type="tel" placeholder="Ваше телефон">
-            <input type="submit" value="Получить тест">
+        <form action="https://formspree.io/xzbbzado" class="row form" method="POST">
+            <input type="text" placeholder="Ваше имя" name="user">
+            <input type="email" placeholder="Ваш e-mail" name="email">
+            <input type="tel" placeholder="Ваше телефон" name="tel">
+            <input type="submit" value="Получить тест" name="name='button'">
         </form>
     </div>
     <!-- Форма перезвоните - начало -->
@@ -53,12 +53,12 @@
         <p class="recall__text">и наш менеджер перезвонит Вам
                 в течение 15 мин, чтобы ответить
                 на все вопросы</p>
-        <form action="" class="form">
-                <input type="text" placeholder="Ваше имя">
-                <input type="email" placeholder="Ваш e-mail">
-                <input type="tel" placeholder="Ваше телефон">
+        <form action="./send.php" class="form" method="POST">
+                <input type="text" placeholder="Ваше имя" name="user">
+                <input type="email" placeholder="Ваш e-mail" name="email">
+                <input type="tel" placeholder="Ваше телефон" name="tel">
                 <input type="submit" value="Перезвоните мне">
-                <input type="hidden" name='Перезвоните мне'>
+                <input type="hidden" name='button' value='Перезвоните мне'>
         </form>
     </div>
     <!-- Форма перезвоните - конец -->

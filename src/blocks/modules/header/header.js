@@ -25,7 +25,7 @@
                 formMoreDetails.style.top = `${number}px`;
                 formMoreDetails.classList.toggle('d-block');
                 const name = el.getAttribute('name');
-                inputHidden.setAttribute('name', name );
+                inputHidden.setAttribute('value', name );
                 
                 circlesMoreDetails.addEventListener('click', () => {
                     formMoreDetails.classList.remove('d-block');
